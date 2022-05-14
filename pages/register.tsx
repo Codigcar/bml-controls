@@ -101,7 +101,7 @@ const Register: NextPage = () => {
       </div>
 
       <div className={styles['container__right']}>
-        <div className={styles['h2--blue']}>MODULO ADMIN</div>
+        <div className={styles['h2--blue']}>BML CONTROLS</div>
         <div className={styles['container__image']}>
           <Image src={adminImg} alt="admin-img" />
         </div>
