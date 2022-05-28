@@ -9,6 +9,7 @@ import { fetchCustom } from '../utils/fetchCustom';
 import { useRouter } from 'next/router';
 import { messageError } from '../utils/messages';
 
+
 const Register: NextPage = () => {
   const router = useRouter();
   const nameInput = useRef<HTMLInputElement>(null);
