@@ -44,7 +44,7 @@ const Home: NextPage = () => {
                   />
                 </div>
                 <div className={styles["home__cards__card-img"]}>
-                  <Image src={"/imgs/home-2.png"} width={500} height={500} style={{borderRadius:60}} alt="imagen"></Image>
+                  <Image src={"/imgs/business.png"} width={500} height={500} style={{borderRadius:60}} alt="imagen"></Image>
                 </div>
               </div>
             </div>
