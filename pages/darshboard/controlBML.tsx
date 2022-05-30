@@ -26,43 +26,38 @@ const ControlBML: NextPage = () => {
           </h2>
 
           <div className={styles["flex"]}>
-            <p className={styles["nivel-1"]}>Nivel 1 (Inicial):  </p>
-            <p>{" "}</p>
+            <p className={styles["nivel-1"]}>Nivel 1 (Inicial): </p>
             <p className={styles["description"]}>
-              Las condiciones de los controles están definidos pero no
+            &nbsp;Las condiciones de los controles están definidos pero no
               formalizados. Se cumplen insastisfactoriamente.
             </p>
           </div>
           <div className={styles["flex"]}>
             <p className={styles["nivel-2"]}>Nivel 2 (En desarrollo):  </p>
-            <p>{" "}</p>
             <p className={styles["description"]}>
-              Existe una documentación de los controles, sin embargo, se
+            &nbsp;Existe una documentación de los controles, sin embargo, se
               encuentran en desarrollo. Se cumple aceptablemente.
             </p>
           </div>
           <div className={styles["flex"]}>
             <p className={styles["nivel-3"]}>Nivel 3 (Definido):  </p>
-            <p>{" "}</p>
             <p className={styles["description"]}>
-              Las condiciones de los controles están operando, existe evidencia
+            &nbsp;Las condiciones de los controles están operando, existe evidencia
               documental de su cumplimiento. Se cumple en alto grado.
             </p>
           </div>
           <div className={styles["flex"]}>
             <p className={styles["nivel-4"]}>Nivel 4 (Gestionado):  </p>
-            <p>{" "}</p>
             <p className={styles["description"]}>
-              Las condiciones del control se encuentran en operación. Existe
+            &nbsp;Las condiciones del control se encuentran en operación. Existe
               evidencia documental de su eficiencia y eficacia. Por lo que se
               cumple plenamente.{" "}
             </p>
           </div>
           <div className={styles["flex"]}>
             <p className={styles["nivel-5"]}>Nivel 5 (Optimizado):  </p>
-            <p>{" "}</p>
             <p className={styles["description"]}>
-              Las condiciones de los controles están en un proceso de mejora
+            &nbsp;Las condiciones de los controles están en un proceso de mejora
               continua. Existe evidencia documental de auditorías internas y
               externas que evalúan su eficiencia y eficacia.
             </p>
