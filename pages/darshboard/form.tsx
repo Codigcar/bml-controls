@@ -201,11 +201,13 @@ const Formulario: NextPage<Props> = ({ createRecord }) => {
 
   return (
     <Layout title="BML">
-      <div style={{marginBottom:100}}>
+      <div style={{}}>
         <header>
+        
           <h1 className={styles["header__title"]}>
             Mapa de controles de ciberseguridad para tarjetas de pago
           </h1>
+          
           <h2 className={styles["header__title-2"]}>
             Conozca la madurez actual de su organización en temas
             deciberseguridad para sus tarjetas de pago
@@ -247,12 +249,28 @@ const Formulario: NextPage<Props> = ({ createRecord }) => {
                                   <div className={styles['flex-space-between']}>
                                     <h3>{subcategory.name}</h3>
                                     <div className={styles['flex']}>
-                                      <p className={`${styles['nivel-1']} ${styles['mr-15']}`} >Nivel 1</p>
-                                      <p className={`${styles['nivel-2']} ${styles['mr-15']}`} >Nivel 2</p>
-                                      <p className={`${styles['nivel-3']} ${styles['mr-15']}`} >Nivel 3</p>
-                                      <p className={`${styles['nivel-4']} ${styles['mr-15']}`} >Nivel 4</p>
-                                      <p className={`${styles['nivel-5']} ${styles['mr-15']}`}>Nivel 5</p>
-                                    </div>
+                                      
+                                      <p className={`${styles.tooltip} ${styles['nivel-1']} ${styles['mr-15']}`} > Nivel 1
+                                        <span className={`${styles.tooltiptext} ` } >Las condiciones de los controles están definidos pero no formalizados. Se cumplen insastisfactoriamente.</span>
+                                      </p>
+                                      
+                                      <p className={`${styles['tooltip-2']} ${styles['nivel-2']} ${styles['mr-15']}`} >Nivel 2 
+                                        <span className={`${styles['tooltiptext-2']} ` } >Existe una documentación de los controles, sin embargo, se encuentran en desarrollo. Se cumple aceptablemente.</span>
+                                      </p>
+                                      
+                                      <p className={`${styles['tooltip-3']} ${styles['nivel-3']} ${styles['mr-15']}`} >Nivel 3 
+                                        <span className={`${styles['tooltiptext-3']} ` } >Las condiciones de los controles están operando, existe evidencia documental de su cumplimiento. Se cumple en alto grado.</span>
+                                      </p>
+                                      
+                                      <p className={`${styles['tooltip-4']} ${styles['nivel-4']} ${styles['mr-15']}`} >Nivel 4 
+                                        <span className={`${styles['tooltiptext-4']} ` } >Las condiciones del control se encuentran en operación. Existe evidencia documental de su eficiencia y eficacia. Por lo que se cumple plenamente.</span>
+                                      </p>
+                                      
+                                      <p className={`${styles['tooltip-5']} ${styles['nivel-5']} ${styles['mr-15']}`}>Nivel 5  
+                                        <span className={`${styles['tooltiptext-5']} ` } >Las condiciones de los controles están en un proceso de mejora continua. Existe evidencia documental de auditorías internas y externas que evalúan su eficiencia y eficacia.</span>
+                                      </p>
+                                    </
+                                    div>
                                   </div>
                                   {
                                     subcategory.controls.map((control: Control, indexControls: number) => (
