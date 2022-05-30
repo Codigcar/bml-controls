@@ -269,8 +269,7 @@ const Formulario: NextPage<Props> = ({ createRecord }) => {
                                       <p className={`${styles['tooltip-5']} ${styles['nivel-5']} ${styles['mr-15']}`}>Nivel 5  
                                         <span className={`${styles['tooltiptext-5']} ` } >Las condiciones de los controles están en un proceso de mejora continua. Existe evidencia documental de auditorías internas y externas que evalúan su eficiencia y eficacia.</span>
                                       </p>
-                                    </
-                                    div>
+                                    </div>
                                   </div>
                                   {
                                     subcategory.controls.map((control: Control, indexControls: number) => (
@@ -309,11 +308,13 @@ const Formulario: NextPage<Props> = ({ createRecord }) => {
                    </div>
                  )
               }
+              <div style={{marginBottom:100}}>
               {
                 watch('form.categories').length > 0 && (
                   <AButton loading={loading} text="Aplicar" />
-                )
+                  )
               }
+              </div>
               
             </div>
           </MForm>
